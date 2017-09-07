@@ -1,3 +1,7 @@
+# code for interfacing between ifssim simulator tools and OSIRIS DRP
+#
+# 2017-9-7 Michael Fitzgerald (mpfitz@ucla.edu)
+
 # import the IFS simulator code
 import osiris as osirissim
 
@@ -10,10 +14,8 @@ def simulate_detector_image(cube, band, scale, date):
     mjd = t.mjd
 
     # get the simulator instance
-    sim = \
-        osirissim.OSIRISSimulator(*osirissim.get_simulator_args(date,
-                                                                band,
-                                                                scale))
+    args = osirissim.get_simulator_args(date, band, scale)
+    sim = osirissim.OSIRISSimulator(*args)
 
     # (un)flip the cube in y direction if on Keck I
     if mjd > 55942.5:
