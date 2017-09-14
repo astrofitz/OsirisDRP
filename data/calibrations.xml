@@ -26,5 +26,6 @@
 
   <sspsfs>
     <sspsf begin="121109" end="151231" band="Kbb" scale="50" dir=".">data/osiris/superPSF_Kbbarc_2015.fits.gz</sspsf>
+    <sspsf begin="170509" band="Kbb" scale="35" dir=".">data/osiris/psf2017Kbb035.fits.gz</sspsf>
   </sspsfs>
 </osiriscalibrations>

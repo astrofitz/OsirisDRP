@@ -13,14 +13,20 @@ pro osiris_stack_lines,outmedstack=outmedstack,outrebin=outrebin,interpcubic=int
 ;insky='/Users/kel/Documents/Projects/OSIRIS_pipeline_testing/osiris_arcs_oct2015/s151028_a001014_el45.fits'
 ;inrecmat='/Users/kel/Documents/Projects/Antennae/OSIRIS_1505/150509/SPEC/FRP/s150508_c002___infl_Kbb_050.fits'
 ; 2016 Jbb/050 arc data
-refx=[1105]
+;refx=[1105]
 ;refx=[497]
-insky='/Users/kel/Documents/Projects/OSIRIS_pipeline_testing/osiris_arcs_mar2016/s160318_c012004.fits.gz'
+;insky='/Users/kel/Documents/Projects/OSIRIS_pipeline_testing/osiris_arcs_mar2016/s160318_c012004.fits.gz'
 ; 2016  sky data
-inrecmat='/Users/kel/Documents/Library/Python/OSIRIS-dev/OsirisDRP/calib/s160318_c013___infl_Jbb_050_origweightlimit.fits.gz'
+;inrecmat='/Users/kel/Documents/Library/Python/OSIRIS-dev/OsirisDRP/calib/s160318_c013___infl_Jbb_050_origweightlimit.fits.gz'
 ;refx=[1475]
 ;refx=[942]
 ;insky='/Users/kel/Documents/Projects/OSIRIS_pipeline_testing/osiris_skies_jul2016/s160711_a013002.fits'
+
+  ;; 2017 Kbb/035 arc
+  refx = [765]
+  insky = '/Users/fitz/work/data/Arcs2017/s170509_c013001.fits.gz'
+  inrecmat = '/Users/fitz/Google Drive/work/OSIRIS Pipeline Working Group/Test Data/Trace/s170509_c014___infl_Kbb_035.fits'
+
 
 sci = readfits(insky)
 
